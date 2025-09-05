@@ -1,8 +1,12 @@
 import 'package:coinbox_test/presentation/views/home_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
 }
 
 class MyApp extends StatelessWidget {
@@ -10,6 +14,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: const HomeScreen());
+    return ScreenUtilInit(
+      designSize: const Size(360, 703),
+      minTextAdapt: true,
+      splitScreenMode: false,
+      builder: (context, child) {
+        return MaterialApp(debugShowCheckedModeBanner: false, home: child);
+      },
+      child: const HomeScreen(),
+    );
   }
 }
