@@ -1,4 +1,3 @@
-// core/widgets/currency_dropdown.dart
 import 'package:coinbox_test/core/constants/currencies.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

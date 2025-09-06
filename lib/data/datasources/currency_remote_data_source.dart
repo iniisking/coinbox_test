@@ -1,8 +1,8 @@
 // lib/data/datasources/currency_remote_data_source.dart
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:flutter_dotenv/flutter_dotenv.dart'; // Add this import
-import 'package:coinbox_test/core/constants/env_constants.dart'; // Add this import
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:coinbox_test/core/constants/env_constants.dart';
 import 'package:coinbox_test/core/errors/exceptions.dart';
 
 abstract class CurrencyRemoteDataSource {
@@ -12,7 +12,7 @@ abstract class CurrencyRemoteDataSource {
 class CurrencyRemoteDataSourceImpl implements CurrencyRemoteDataSource {
   final http.Client client;
   static const String baseUrl = 'https://v6.exchangerate-api.com/v6';
-  late final String apiKey; // Change to late final
+  late final String apiKey;
 
   CurrencyRemoteDataSourceImpl({required this.client}) {
     // Initialize API key from environment variables

@@ -1,4 +1,3 @@
-// core/constants/currencies.dart
 const List<String> currencies = ['USD', 'SGD'];
 
 

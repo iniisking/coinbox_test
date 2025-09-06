@@ -1,4 +1,3 @@
-// exceptions.dart
 class ServerException implements Exception {
   final String message;
 

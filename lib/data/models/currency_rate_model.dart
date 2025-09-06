@@ -1,4 +1,3 @@
-// currency_rate_model.dart
 import 'package:equatable/equatable.dart';
 
 class CurrencyRateModel extends Equatable {
