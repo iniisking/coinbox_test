@@ -1,11 +1,9 @@
-// providers.dart
 import 'package:coinbox_test/data/repositories/currency_repository.dart';
+import 'package:coinbox_test/domain/usecases/%20get_exchange_rates.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:http/http.dart' as http;
 import 'package:coinbox_test/data/datasources/currency_remote_data_source.dart';
 import 'package:coinbox_test/data/repositories/currency_repository_impl.dart';
-
-import '../../domain/usecases/ get_exchange_rates.dart';
 
 final httpClientProvider = Provider<http.Client>((ref) => http.Client());
 

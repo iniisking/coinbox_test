@@ -1,4 +1,3 @@
-// presentation/viewmodels/currency_viewmodel.dart
 import 'package:coinbox_test/core/providers/providers.dart';
 import 'package:coinbox_test/domain/usecases/%20get_exchange_rates.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';

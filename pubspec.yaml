@@ -43,6 +43,7 @@ dependencies:
   flutter_screenutil: ^5.9.3
   shimmer: ^3.0.0
   dartz: ^0.10.1
+  flutter_dotenv: ^6.0.0
 
 dev_dependencies:
   flutter_test:
@@ -70,6 +71,7 @@ flutter:
   assets:
     - assets/images/
     - assets/svg/
+    - .env
 
 flutter_gen:
   output: lib/gen/
