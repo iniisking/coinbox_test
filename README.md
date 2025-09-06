@@ -14,6 +14,16 @@ _A modern, real-time currency converter built with Clean Architecture_
 
 ---
 
+## Demo
+
+![App Demo](docs/demo.gif)
+
+![App Demo](docs/screenshot1.png)
+
+![App Demo](docs/screenshot2.png)
+
+![App Demo](docs/screenshot3.png)
+
 ## Overview
 
 This Currency Converter is a Flutter application that provides real-time currency conversion between 35+ currencies. Built with Clean Architecture principles, MVVM pattern, and Riverpod state management for enterprise-grade scalability and maintainability.
